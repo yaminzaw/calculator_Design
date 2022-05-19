@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="calculator.css">
+        <script type="text/javascript" src="calculator.js"></script> 
+    </head>
+    <body>
+        <div class="container">  
+            <div class="calc-body">  
+              <div class="calc-screen">  
+                <div class="calc-operation" > <ul id="list" style="list-style-type: none;"></ul></div>  
+                <div class="calc-typed" id="view"><span class="blink-me"> _ </span> </div>  
+              </div>
+              <div class="calc-button-row">  
+                <div class="button c" value = "x" onclick="clearBtn()"> C </div>     
+                <div class="button"  onclick="openNav()"><i class="material-icons" >access_time</i></div>
+                <div class="button"  onclick="closeNav()"><i class="fa fa-close" style="color: rgb(216, 94, 94);"></i></div>    
+                <div class="button l" value = "/" onclick="operator('/')"> / </div>  
+              </div>   
+              <div class="calc-button-row">  
+                <div class="button" value = "7" onclick="numberAdd(7)"> 7 </div>  
+                <div class="button" value = "8" onclick="numberAdd(8)"> 8 </div>  
+                <div class="button" value = "9" onclick="numberAdd(9)"> 9 </div>  
+                <div class="button l" value = "*" onclick="operator('*')"> * </div>  
+              </div>  
+              <div class="calc-button-row">  
+                <div class="button" value = "4" onclick="numberAdd(4)"> 4 </div>  
+                <div class="button" value = "5" onclick="numberAdd(5)"> 5 </div>  
+                <div class="button" value = "6" onclick="numberAdd(6)"> 6 </div>  
+                <div class="button l" value = "-" onclick="operator('-')"> - </div>
+              </div>  
+              <div class="calc-button-row">  
+                <div class="button" value = "1" onclick="numberAdd(1)"> 1 </div>  
+                <div class="button" value = "2" onclick="numberAdd(2)"> 2 </div>  
+                <div class="button" value = "3" onclick="numberAdd(3)"> 3 </div>  
+                <div class="button l" value = "+" onclick="operator('+')"> + </div>  
+              </div>  
+              <div class="calc-button-row">  
+                <div class="button" value = "0" onclick="numberAdd(0)"> 0 </div>
+                <div class="button" value = "00" onclick="numberAdd('00')">00</div>
+                <div class="button l" value = "=" onclick="result()"> = </div>
+                <div class="button" value = "%" onclick="operator('%')">% </div>   
+              </div>  
+            </div>  
+    </body>
+</html>
